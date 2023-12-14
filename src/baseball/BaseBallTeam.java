@@ -1,3 +1,4 @@
+//■仕様まとめ■
 //以下のフィールドを BaseBallTeam に持たせるカプセル化を使う。
 //name（String型）
 //win（int型）
@@ -22,19 +23,17 @@
 //report メソッドを呼び出して、勝敗情報を表示する。
 //東京ヤクルトスワローズ の2022年の成績は 80勝 59敗 4分、勝率は 0.5755395683453237です。
 //横浜DeNAベイスターズ の2022年の成績は 73勝 68敗 2分、勝率は 0.5177304964539007です。
-
-
-//
+//■仕様まとめここまで■
 
 package baseball;
 
 public class BaseBallTeam {
 
     //パブリックなフィールド
-    public String name;     //球団名
-    public int win;         //勝ち回数
-    public int lose;        //負け回数
-    public int draw;        //引き分け回数
+    private String name;     //球団名
+    private int win;         //勝ち回数
+    private int lose;        //負け回数
+    private int draw;        //引き分け回数
 
     //引数なしのコンストラクタ　念のための記述
     public BaseBallTeam() {
@@ -58,4 +57,38 @@ public class BaseBallTeam {
     public void report() {
         System.out.println(name + "の2022年の成績は" + win + "勝" + lose + "敗" + draw + "分、勝率は" + getRate() + "です。");
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getWin() {
+        return win;
+    }
+
+    public void setWin(int win) {
+        this.win = win;
+    }
+
+    public int getLose() {
+        return lose;
+    }
+
+    public void setLose(int lose) {
+        this.lose = lose;
+    }
+
+    public int getDraw() {
+        return draw;
+    }
+
+    public void setDraw(int draw) {
+        this.draw = draw;
+    }
+
+
 }
