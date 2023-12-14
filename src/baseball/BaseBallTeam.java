@@ -35,7 +35,7 @@ public class BaseBallTeam {
     private int lose;        //負け回数
     private int draw;        //引き分け回数
 
-    //引数なしのコンストラクタ　念のための記述
+    //引数なしのコンストラクタ（念のための記述）
     public BaseBallTeam() {
     }
 
